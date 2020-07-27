@@ -1,0 +1,46 @@
+hey guys    <break time="500ms"/>   in this vedio i will be showinng you  how to create wordcloud using python
+
+so if you are wondering what word cloud is , its a siple image contaning wordss arranged in a particular order and style 
+
+here you can see fw examples of wordcloud images the idea is very simple if yoou take any text file and convert it into wordcloud then the words that occur the highest will be printed in darker and larger size while those words which occur the least will be in smaller size and lighter shades
+
+In today's video i will be using cloud ide since i have some issue with my python interpreter but anyways the process is same for both
+
+so o continue with our work todaywee will require a text file which we will be using as the input for the wordcloud 
+
+I have a small text file downloaded here it is the summary of one of the series of Harry Potter
+
+So lets start , I will just open a new python notebook
+
+first of all make sure that you have the necessary libraries installed in your system
+we will be using around 5 libraries in this project
+
+So first we will import the matplotlib libary to plot our words 
+Then next thing is the most important one that is the wordcloud module Actually we can create the wordcloud without this libary but that would take around hundreds of lines of code 
+Next import numpy library
+Then the pillow module we will be using this module for a special attribute of the wordcloud which I will be showing you I a while
+
+After importing  the module the next tep is to create the data set So to do that first we need to open our text file  here you can see the text file with name sample. t x t and will will read that into our dataset
+
+next we will create a simple function to generate our wordcloud
+cloud equals to wordcloud of background color  here we will keep it as formal  white then the total number of words in he picture as 200 and the stopword =stopwords this is to ignore words like is are the so on 
+next cloud dot generate of string to generate the wordcloud and then we will save this generated wordcloud as a image to our system so wordcloud  dot png
+
+now we are done with creating the function to generate the word clooud 
+now just to convert all the letters to lower case and then just call the function create word cloud
+
+so when we run this code we can see a new file being generated as wordcloud.png when we open this file we can see an image 
+and we can notice that the image is of default rectangular shape 
+now if we want to customize the shape as circle or heart or any other random shape we can do that in just one single step and thats why we had imported the pillow module at the begining
+
+i will use this png image to mask the wordcloud so that the new wordcloud generated wil be in the shape of this image 
+so i will just close other tabs and first will just rename the file image name and then add a new code over here that is mask array = n p y dot array and open the image that is family dot png 
+
+now when we run it we have a new image genrated and we can see that borders of the imag ebeing  changed 
+
+so that was a quick tutorial for created wordcloud using pthon 
+thanks for watching
+
+
+
+
