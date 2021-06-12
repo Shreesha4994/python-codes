@@ -5,7 +5,9 @@ file = open("textfile.txt","r")
 for line in file:
 	space_count+=line.count(" ")
 	a_count+=line.count("a")
-	text_count+=line.count("Text")
+	text_count+=line.count("Text ")
+	text_count+=line.count("Text\n")
+	
 	word_count+=len(line.split(" "))
 	for letter in line:
 		if(letter in vowels):
