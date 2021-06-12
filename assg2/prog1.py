@@ -1,7 +1,7 @@
 #count no of vowels,words,a-count,text-count,space-count
 vowels=['A','a','E','e','i','o','u','I','O','U']
 word_count=v_count=text_count=a_count=space_count=int(0)
-file = open("sample3.txt","r")
+file = open("textfile.txt","r")
 for line in file:
 	space_count+=line.count(" ")
 	a_count+=line.count("a")
